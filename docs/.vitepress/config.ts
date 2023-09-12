@@ -45,6 +45,11 @@ export default defineConfig({
         dateStyle: 'full',
         timeStyle: 'medium'
       }
-    }
+    },
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+    sidebarMenuLabel: '菜单'
   }
 })
