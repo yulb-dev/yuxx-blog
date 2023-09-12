@@ -3,7 +3,8 @@
 layout: home
 
 hero:
-  text: 'yuxx个人博客'
+  name: 'yuxx 个人博客'
+  tagline: '你好'
   actions:
     - theme: brand
       text: 技术文章
@@ -13,11 +14,11 @@ hero:
       link: /Websites/
 
 features:
-  - icon: 🛠️
-    title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 技术文章
+    details: 涵盖html、css、js、node.js、等框架知识
+    link: /TechnicalArticles/custom-promise
+  - title: 实用网站收集
+    details: 前端相关技术文档、网站的收集
+  - title: 其他
+    details: Node.js、Vue、React 等一些有趣的前端知识
 ---

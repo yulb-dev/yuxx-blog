@@ -1,4 +1,4 @@
-# ES6模块 和 CommonJS 的区别
+# ES6 模块 和 CommonJS 的区别
 
 1. CommonJS 模块的顶层 this 指向当前模块，ES6 模块中，顶层的 this 指向 undefined
 2. CommonJS 模块输出的是一个值的拷贝，ES6 模块输出的是值的引用：
