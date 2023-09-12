@@ -2,12 +2,17 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base:'/yuxx-blog/',
+  base: '/yuxx-blog/',
   lang: 'en-zh',
   title: 'yxx-blog',
   description: 'yuxx个人博客',
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/RoundCorner3.png',
+    outline: {
+      label: '本页目录'
+    },
+    darkModeSwitchLabel: '主题',
+    sidebarMenuLabel: '菜单',
     nav: [
       { text: '首页', link: '/' },
       {
@@ -39,7 +44,7 @@ export default defineConfig({
       ]
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/yulb-dev/yuxx-blog' }],
     lastUpdated: {
       text: 'Updated at',
       formatOptions: {
@@ -50,7 +55,6 @@ export default defineConfig({
     docFooter: {
       prev: '上一页',
       next: '下一页'
-    },
-    sidebarMenuLabel: '菜单'
+    }
   }
 })
