@@ -1,10 +1,14 @@
 <script setup>
-defineProps(['cardList'])
+defineProps(['dataList'])
+
+function goDestination(data) {
+    window.open(data.href)
+}
 </script>
 
 <template>
     <div class="card-list">
-        <div v-for="cardItem in classification.item" class="card-item" @click="goDestination(cardItem)">
+        <div v-for="cardItem in dataList" class="card-item" @click="goDestination(cardItem)">
             <p class="name">{{ cardItem.name }}</p>
             <p class="details">{{ cardItem.details }}</p>
         </div>

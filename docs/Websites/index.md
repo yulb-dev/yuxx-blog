@@ -2,23 +2,20 @@
 
 <script setup>
 import { ref } from 'vue'
+import cardList from './card-list.vue'
 import webList from './webList.js'
 function goDestination(data){
     window.open(data.href)
 }
 </script>
 
-## javasc
+## {{webList[0].name}}
 
-<div v-for="classification in webList" :key="classification.name" class="classification">
-    <!-- <p class='title'>{{ classification.name }}</p> -->
-    <div class="card-list">
-        <div v-for="cardItem in classification.item" class="card-item" @click="goDestination(cardItem)">
-            <p class="name">{{ cardItem.name }}</p>
-            <p class="details">{{ cardItem.details }}</p>
-        </div>
-    </div>
-</div>
+<card-list :data-list="webList[0].item" />
+## {{webList[1].name}}
+<card-list :data-list="webList[1].item" />
+## {{webList[2].name}}
+<card-list :data-list="webList[2].item" />
 
 <style scoped lang="scss">
 /* *{
@@ -26,6 +23,13 @@ function goDestination(data){
     padding:0 !important;
 } */
 h2{
+    font-size:17px;
+    padding:0 0 0 8px !important;
+    border:none;
+    margin-top:20px !important;
+    a{
+        top:0 !important;
+    }
       &::before{
             content:'';
             width:2px;
