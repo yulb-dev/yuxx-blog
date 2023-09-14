@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "sass": "^1.67.0",
     "vitepress": "^1.0.0-rc.12"
   }
 }

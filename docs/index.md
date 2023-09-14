@@ -20,5 +20,11 @@ features:
   - title: 实用网站收集
     details: 前端相关技术文档、网站的收集
   - title: 其他
-    details: Node.js、Vue、React 等一些有趣的前端知识
+    details: Node.js、Vue、Reac
+  - title: 其他
+    details: Node.js、Vue、Reac
+  - title: 其他
+    details: Node.js、Vue、React
+  - title: 其他
+    details: Node.js、Vue、React
 ---

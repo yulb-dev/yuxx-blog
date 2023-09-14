@@ -122,7 +122,9 @@ log 1
 Promise 1  
 Promise 2  
 Promise 3  
-Promise 4  
+Promise 4
+
+## 分析
 
 &emsp;&emsp;我们可以知道，`p1` 一上来就被改变了状态，再向下执行 `p1.then` 里的回调会被添加进异步队列，并且会返回 promise 实例。  
 &emsp;&emsp; `p3`就是这个 promise 实例，因为`p1.then`的回调并没有开始执行，通过打印可以看到他的状态为 pending，所以执行到`p3.then`他的回调并不会被添加到异步队列，这时候异步队列仅有`p1.then`的回调。  
