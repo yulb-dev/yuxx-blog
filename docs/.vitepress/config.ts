@@ -91,22 +91,26 @@ export default defineConfig({
               link: '/TechnicalArticles/event'
             },
             {
-              text: 'test',
-              link: '/TechnicalArticles/api-examples'
-            }
+              text: '使用 ajax 和 promise 实现简易 axios',
+              link: '/TechnicalArticles/ajax-promise'
+            },
+            {
+              text: 'javascript 实现深拷贝',
+              link: '/TechnicalArticles/deep-clone'
+            },
           ]
         }
       ]
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/yulb-dev/yuxx-blog' }],
-    lastUpdated: {
-      text: 'Updated at',
-      formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'medium'
-      }
-    },
+    // lastUpdated: {
+    //   text: 'Updated at',
+    //   formatOptions: {
+    //     dateStyle: 'full',
+    //     timeStyle: 'medium'
+    //   }
+    // },
     docFooter: {
       prev: '上一页',
       next: '下一页'

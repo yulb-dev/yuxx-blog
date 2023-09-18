@@ -222,8 +222,23 @@ const webList = [
     ]
   },
   {
+    name: '其他技术文档',
+    item: [
+      {
+        name: '浏览器的工作原理',
+        href: 'https://developer.mozilla.org/zh-CN/docs/Web/Performance/How_browsers_work',
+        details: ''
+      }
+    ]
+  },
+  {
     name: '其他',
     item: [
+      {
+        name: 'VSCode 插件推荐',
+        href: 'https://mp.weixin.qq.com/s/DCuZLSCijXAzIQpOrdbZpA',
+        details: '2023年最新最全 VSCode 插件推荐'
+      },
       {
         name: 'iconfont',
         href: 'https://www.iconfont.cn/',
