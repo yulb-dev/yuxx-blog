@@ -98,6 +98,10 @@ export default defineConfig({
               text: 'javascript 实现深拷贝',
               link: '/TechnicalArticles/deep-clone'
             },
+            {
+              text: '使用 node.js 复制文件夹',
+              link: '/TechnicalArticles/copy-folder'
+            }
           ]
         }
       ]
