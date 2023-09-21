@@ -1,4 +1,4 @@
-import avatar from './images/avatar.jpg'
+import avatar from './images/avatar.jpeg'
 
 const data = {
   name: 'Yu xx',
@@ -15,7 +15,7 @@ const data = {
   workExperience: {
     post: '前端开发工程师',
     corporateName: '每日互动股份有限公司',
-    experience: '2022/04—至今'
+    experience: '2022/05—至今'
   }
 }
 
