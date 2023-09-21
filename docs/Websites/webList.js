@@ -185,6 +185,11 @@ const webList = [
         details: '用于现代 JavaScript 应用程序的 静态模块打包工具'
       },
       {
+        name: 'vite',
+        href: 'https://cn.vitejs.dev/',
+        details: '下一代的前端工具链'
+      },
+      {
         name: 'Parcel',
         href: 'https://parceljs.org/',
         details: '用于 web 的零配置构建工具'
@@ -224,6 +229,11 @@ const webList = [
   {
     name: '其他技术文档',
     item: [
+      {
+        name: '前后端所有鉴权方案',
+        href: 'https://mp.weixin.qq.com/s/UA0AOJjw39f9993R_X5cgw',
+        details: ''
+      },
       {
         name: '浏览器的工作原理',
         href: 'https://developer.mozilla.org/zh-CN/docs/Web/Performance/How_browsers_work',

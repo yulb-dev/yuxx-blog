@@ -39,7 +39,8 @@ export default defineConfig({
         text: '更多',
         items: [
           { text: '技术文章', link: '/TechnicalArticles/use-state' },
-          { text: '实用网站收集', link: '/Websites/' }
+          { text: '实用网站收集', link: '/Websites/' },
+          { text: '关于我', link: '/AboutMe/' }
         ]
       }
     ],

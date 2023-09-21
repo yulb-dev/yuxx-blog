@@ -15,5 +15,8 @@
   "devDependencies": {
     "sass": "^1.67.0",
     "vitepress": "^1.0.0-rc.12"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10"
   }
 }
