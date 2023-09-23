@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: 'yuxx 个人博客'
+  name: 'Yu xx个人博客'
   tagline: '你好'
   actions:
     - theme: brand
