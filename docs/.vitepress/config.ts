@@ -59,6 +59,10 @@ export default defineConfig({
               text: '两栏、三栏自适应布局',
               link: '/TechnicalArticles/css/adaptive-layout',
             },
+            {
+              text: '详解浏览器的回流和重绘',
+              link: '/TechnicalArticles/css/reflow-repaint',
+            },
           ],
         },
         {
@@ -117,6 +121,10 @@ export default defineConfig({
               text: '使用 node.js 复制文件夹',
               link: '/TechnicalArticles/copy-folder',
             },
+            // {
+            //   text: '浏览器的工作原理',
+            //   link: '/TechnicalArticles/browsers-work',
+            // },
           ],
         },
       ],
