@@ -63,6 +63,10 @@ export default defineConfig({
               text: '详解浏览器的回流和重绘',
               link: '/TechnicalArticles/css/reflow-repaint',
             },
+            {
+              text: 'CSS 性能优化',
+              link: '/TechnicalArticles/css/css-performance-optimization',
+            },
           ],
         },
         {
@@ -120,6 +124,10 @@ export default defineConfig({
             {
               text: '使用 node.js 复制文件夹',
               link: '/TechnicalArticles/copy-folder',
+            },
+            {
+              text: 'JavaScript 性能优化',
+              link: '/TechnicalArticles/javascript-performance-optimization',
             },
             // {
             //   text: '浏览器的工作原理',
