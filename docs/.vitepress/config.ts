@@ -7,7 +7,7 @@ export default defineConfig({
   title: 'yxx-blog',
   description: 'yuxx 个人博客',
   themeConfig: {
-    logo: '/RoundCorner3.png',
+    logo: '/logo.png',
     outline: {
       label: '本页目录',
     },
