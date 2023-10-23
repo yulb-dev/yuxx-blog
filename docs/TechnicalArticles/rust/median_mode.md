@@ -113,8 +113,6 @@ use std::{collections::HashMap, io};
 fn main() {
     println!("输入你要执行的数字，以空格分隔");
 
-
-
     let mut str = String::new();
     let mut num_vec: Vec<i32> = Vec::new();
 
