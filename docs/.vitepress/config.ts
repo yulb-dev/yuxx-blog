@@ -138,7 +138,17 @@ export default defineConfig({
             //   link: '/TechnicalArticles/browsers-work',
             // },
           ]
-        }
+        },
+        {
+          text: 'rust',
+          collapsed: false,
+          items: [
+            {
+              text: '寻找中位数和众数—基于rust',
+              link: '/TechnicalArticles/rust/median_mode'
+            },
+          ]
+        },
       ]
     },
 
