@@ -126,10 +126,6 @@ export default defineConfig({
               link: '/TechnicalArticles/copy-folder'
             },
             {
-              text: '为什么不建议 v-if 和 v-for 同时使用',
-              link: '/TechnicalArticles/v-if&v-for'
-            },
-            {
               text: 'JavaScript 性能优化',
               link: '/TechnicalArticles/javascript-performance-optimization'
             }
@@ -140,11 +136,25 @@ export default defineConfig({
           ]
         },
         {
+          text: 'vue',
+          collapsed: false,
+          items: [
+            {
+              text: '为什么不建议 v-if 和 v-for 同时使用',
+              link: '/TechnicalArticles/v-if&v-for'
+            },
+          ]
+        },
+        {
           text: 'rust',
           collapsed: false,
           items: [
             {
               text: '寻找中位数和众数—基于rust',
+              link: '/TechnicalArticles/rust/median_mode'
+            },
+            {
+              text: '通讯录管理系统—基于rust',
               link: '/TechnicalArticles/rust/median_mode'
             },
           ]

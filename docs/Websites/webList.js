@@ -232,6 +232,11 @@ const webList = [
         href: 'https://electronjs.org/',
         details: '使用 JavaScript、HTML 和 CSS 构建跨平台桌面应用程序',
       },
+      {
+        name: 'Tauri',
+        href: 'https://tauri.app/',
+        details: '使用web前端构建更小、更快、更安全的桌面应用程序。',
+      },
     ],
   },
   {
