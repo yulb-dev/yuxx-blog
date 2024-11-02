@@ -157,6 +157,10 @@ export default defineConfig({
               text: "react + pdfjs 实现预览 pdf 文件",
               link: "/TechnicalArticles/React/pdf-preview",
             },
+            {
+              text: "nextjs 实现文件上传 rest-api",
+              link: "/TechnicalArticles/React/nextjs-upload",
+            },
           ],
         },
         {
