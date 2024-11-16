@@ -161,6 +161,10 @@ export default defineConfig({
               text: "nextjs 实现文件上传 rest-api",
               link: "/TechnicalArticles/React/nextjs-upload",
             },
+            {
+              text: "封装 AspectFitImg",
+              link: "/TechnicalArticles/React/aspect-fit",
+            },
           ],
         },
         {
