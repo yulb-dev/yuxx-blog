@@ -83,8 +83,8 @@ const webList = [
         details: '适用于每个平台的双向且低延迟的通信',
       },
       {
-        name: 'Nest.js 中文网',
-        href: 'https://nest.nodejs.cn/',
+        name: 'Nest.js',
+        href: 'https://nestjs.com/',
         details: '一个用于构建高效、可扩展的 Node.js 服务器端应用的框架',
       },
       {
@@ -94,7 +94,7 @@ const webList = [
       },
       {
         name: 'Prisma',
-        href: 'https://mongoose.nodejs.cn/',
+        href: 'https://www.prisma.io/',
         details: '下一代 Node.js 和 TypeScript ORM',
       },
       {

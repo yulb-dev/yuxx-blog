@@ -3,11 +3,12 @@
 layout: home
 
 hero:
-  name: "Yu xx个人博客"
-  tagline: "你好"
+  name: "个人博客📝"
+  text: 使用 vitepress 记录前端开发中有趣的知识、教程、心得
+  # tagline: "使用 vitepress 记录前端开发中有趣的知识、教程、心得"
   actions:
     - theme: brand
-      text: 技术文章
+      text: 开始阅读
       link: /TechnicalArticles/React/use-state
     - theme: alt
       text: 实用网站收集
@@ -19,4 +20,5 @@ features:
     link: /TechnicalArticles/React/use-state
   - title: 实用网站收集
     details: 前端相关技术文档、网站的收集
+    link: /Websites
 ---
