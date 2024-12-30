@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="file" id="file1" multiple />
+    <input type="file" id="file2" multiple />
+    <button onclick="compareFiles()">Compare Files</button>
+    <p id="result"></p>
+  </body>
+
+  <script>
+    async function calculateFileHash(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsArrayBuffer(file);
+        reader.onload = () => {
+          resolve(reader.result);
+        };
+        reader.onerror = () => {
+          reject(reader.error);
+        };
+      }).then(async (buffer) => {
+        // 使用SubtleCrypto API生成SHA-256哈希
+        const hashBuffer = await crypto.subtle.digest("SHA-256", buffer);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray
+          .map((b) => b.toString(16).padStart(2, "0"))
+          .join("");
+        return hashHex;
+      });
+    }
+
+    async function compareFiles() {
+      const startTime = Date.now();
+      const fileInput1 = document.getElementById("file1");
+      const fileInput2 = document.getElementById("file2");
+      const resultElement = document.getElementById("result");
+
+      if (!fileInput1.files.length || !fileInput2.files.length) {
+        resultElement.textContent = "Please select two files to compare.";
+        return;
+      }
+
+      try {
+        const hash1 = await calculateFileHash(fileInput1.files[0]);
+        const hash2 = await calculateFileHash(fileInput2.files[0]);
+
+        if (hash1 === hash2) {
+          resultElement.textContent = `The files are identical. time:${
+            (Date.now() - startTime) / 1000
+          }`;
+        } else {
+          resultElement.textContent = `The files are different. time:${
+            (Date.now() - startTime) / 1000
+          }`;
+        }
+      } catch (err) {
+        console.error("Error comparing files:", err);
+        resultElement.textContent =
+          "An error occurred while comparing the files.";
+      }
+    }
+  </script>
+</html>
