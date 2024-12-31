@@ -45,6 +45,7 @@ export default (props: { filePath?: string }) => {
   const init = async () => {
     // 不能顶层导入，否则会报错
     let pdfjsLib = await import("pdfjs-dist");
+    // 此处的版本号需要和安装的包版本号对应，
     pdfjsLib.GlobalWorkerOptions.workerSrc =
       "https://unpkg.com/pdfjs-dist@4.7.76/build/pdf.worker.mjs";
 
